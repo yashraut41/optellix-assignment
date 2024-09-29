@@ -1,0 +1,16 @@
+{
+  "name": "optellix-assignment",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.4.1",
+    "jquery": "^3.7.1",
+    "three": "^0.168.0"
+  }
+}

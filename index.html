@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>preop</title>
+  </head>
+  <body>
+    <div class="left-controls">
+      <ul>
+        <li>Femur Center <input type="radio" id="femur-pt" /></li>
+        <li>Hip Center <input type="radio" id="hip-pt" /></li>
+        <li>
+          Femur Proximal Canal
+          <input type="radio" id="femur-poximal-canal-pt" />
+        </li>
+        <li>
+          Femur Distal Canal
+          <input type="radio" id="femur-distal-canal-pt" />
+        </li>
+        <li>
+          Medial Epicondyle
+          <input type="radio" id="medial-epicondyle-pt" />
+        </li>
+        <li>
+          Lateral Epicondyle
+          <input type="radio" id="lateral-epicondyle-pt" />
+        </li>
+        <li>Distal Medial Pt <input type="radio" id="distal-medial-pt" /></li>
+        <li>Distal Lateral Pt <input type="radio" id="distal-lateral-pt" /></li>
+        <li>
+          Posterior Medial Pt
+          <input type="radio" id="posterior-medial-pt" />
+        </li>
+        <li>
+          Posterior Lateral Pt
+          <input type="radio" id="posterior-lateral-pt" />
+        </li>
+      </ul>
+      <button id="update-btn">Update</button>
+    </div>
+    <canvas class="webgl"></canvas>
+    <div class="right-controls">
+      <h2>Femur Preop Planning Platform</h2>
+      <div class="controls">
+        <div class="control-section">
+          <label
+            >Varus/Valgus
+            <div class="control-group">
+              <button class="decrement">-</button>
+              <input type="text" id="varus-valgus" value="0°" readonly />
+              <button class="increment">+</button>
+            </div>
+          </label>
+        </div>
+
+        <div class="control-section">
+          <label
+            >Flexion/Extension
+            <div class="control-group">
+              <button class="decrement">-</button>
+              <input type="text" id="flexion-extension" value="0°" readonly />
+              <button class="increment">+</button>
+            </div>
+          </label>
+        </div>
+
+        <div class="control-section">
+          <label
+            >Distal Resection
+            <div class="control-group">
+              <button class="decrement">-</button>
+              <input type="text" id="distal-resection" value="10 mm" readonly />
+              <button class="increment">+</button>
+            </div>
+          </label>
+        </div>
+
+        <div class="control-section">
+          <label>
+            Resection
+            <div class="switch">
+              <input type="checkbox" id="resection-switch" />
+              <span class="slider"></span>
+            </div>
+          </label>
+          <label>
+            Tibia
+            <div class="switch">
+              <input type="checkbox" id="tibia-switch" checked/>
+              <span class="slider"></span>
+            </div>
+          </label>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
